@@ -20,7 +20,7 @@ If you use this code, please cite the following paper:
 }
 ```
 
-![test](pics/diagram_V2.png)
+![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram_V2.pdf "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
 ![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram V2.pdf "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
