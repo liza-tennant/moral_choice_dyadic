@@ -9,7 +9,7 @@ Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learnin
 If you use this code, please cite the following paper:
 
 ```bibtex
-@INPROCEEDINGS{TennantIJCAI2023,
+@INPROCEEDINGS{TennantMoralRL2023,
     author={Tennant, Elizaveta and Hailes, Stephen and Musolesi, Mirco},
     booktitle={The 32nd International Joint Conference on Artificial Intelligence (IJCAI'23)}, 
     title={Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning}, 
@@ -19,6 +19,8 @@ If you use this code, please cite the following paper:
     doi={x}
 }
 ```
+
+[test](pics/diagram V2.pdf)
 
 ![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram V2.pdf "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
