@@ -1,11 +1,6 @@
+#### NOTE run this line-by-line on the command line on a remote cluster - do not run as a llong script, as comments will not get interpreted correctly 
+
 #### NB using python version 3.7.4 on laptop (on the shell, I installed 3.8.0)
-
-#### UPLOAD FILES TO SERVER - does not work####
-#rsync -azv --stats --progress -e 'ssh -A -J lkarmann@tails.cs.ucl.ac.uk' /RL/IPD lkarmann@engima.cs.ucl.ac.uk:/remote/experiment_data/IPD
-#rsync -azv --stats --progress -e 'ssh -A -J lkarmann@tails.cs.ucl.ac.uk' ~/RL/IPD lkarmann@tails.cs.ucl.ac.uk:/my_env/experiment_data/IPD
-#### DOWNLOAD FILES TO LAPTOP - not tried ####
-#rsync -azv --stats --progress -e 'ssh -A -J lkarmann@tails.cs.ucl.ac.uk' lkarmann@enigma.cs.ucl.ac.uk:/remote/experiment_data/IPD/resuls /RL/IPD/results
-
 
 #### RUN ON COMMAND LINE, before launching the bash script ####
 ssh -t lkarmann@tails.cs.ucl.ac.uk ssh -t geogcpu3.cs.ucl.ac.uk 
@@ -29,7 +24,7 @@ cd my_env
 source bin/activate.csh
 #deactivate
 
-#working from the home directory on the my_env; make sure I have lates version of pip installed 
+#working from the home directory on the my_env; make sure I have latest version of pip installed 
 pip install -r experiment_data/requirements.txt
 
 cd experiment_data
@@ -40,11 +35,6 @@ cd IPD
 
 #echo 'alias python3.8="/home/lkarmann/bin/python3.8"' >> ~/.bashrc
 
-
-#### if runninig locally ####
-#os.chdir('~/Library/Mobile\ Documents/com~apple~CloudDocs/PhD_data') 
-#OR
-#cd Documents/PhD_data
 
 
 ################################################
