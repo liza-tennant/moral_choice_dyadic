@@ -20,6 +20,6 @@ If you use this code, please cite the following paper:
 }
 ```
 
-![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram V2.png "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
+![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram V2.pdf "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
 You can contact the authors at: `l.karmannaya.16@ucl.ac.uk`
