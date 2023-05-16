@@ -37,8 +37,7 @@ This code can be used to run a simulation of social dilemma games between two ag
 
 the rewards is defined by the agent's payoff in a game. In particular, we use three social dilemma games (Iterated Prisoner's Dilemma - IPD, Iterated Volunteer's dilemma - IVD, Iterated Stag Hunt - ISH), with the following payoffs: 
 
-![Payoffs](pics/payoffs.png "Payoffs")
-
+[comment]: ![Payoffs](pics/payoffs.png "Payoffs")
 <p align="center">
   <img src="https://github.com/Liza-Karmannaya/modeling_moral_choice_dyadic/blob/main/pics/payoffs.png" />
 </p>
