@@ -31,13 +31,18 @@ pip install -r experiment_data/requirements.txt
 
 ## The environment 
 
-This code can be used to run a simulation of social dilemma games between two agents - a learning moral agent M and a learning opponent O. 
+This code can be used to run a simulation of social dilemma games between two agents - a learning moral agent M and a learning opponent O. We use a. Reinforcement Learning paradigm where each agent learns accoridng to a rewards signal.
 
 ![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram_V2.png "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
-In particular, we use three social dilemma games (Iterated Prisoner's Dilemma - IPD, Iterated Volunteer's dilemma - IVD, Iterated Stag Hunt - ISH), with the following payoffs: 
+the rewards is defined by the agent's payoff in a game. In particular, we use three social dilemma games (Iterated Prisoner's Dilemma - IPD, Iterated Volunteer's dilemma - IVD, Iterated Stag Hunt - ISH), with the following payoffs: 
 
 ![Payoffs](pics/payoffs.png "Payoffs")
+
+These experiments conduct a systematic comparison of interactions between pairs of various moral learning agents in each of the dilemma games. The moral agents are defined using the following reward functions: 
+
+![Rewards](pics/moralrewards.png "Rewards")
+
 
 
 ## Run the experiments
