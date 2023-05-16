@@ -27,7 +27,7 @@ You can contact the authors at: `l.karmannaya.16@ucl.ac.uk`
 
 Intall packages listed in requirements.txt into a Python environment. 
 ```
-pip install -r experiment_data/requirements.txt
+pip install -r requirements.txt
 ```
 
 ## The environment 
