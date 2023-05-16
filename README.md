@@ -79,8 +79,14 @@ python3 main.py --title1 QLVM --title2 QLVE_k --eps0 1.0 --epsdecay True &
 python3 main.py --title1 QLVM --title2 QLVM --eps0 1.0 --epsdecay True
 ```
 
+4. to run experiments for a different dilemma game - e.g. IVD:
+```
+cd ../IVD
+#run main.py with each pair of agents as above 
+```
 
 ## Parameters
+
 manually specified:
 ```
 --eps0 1.0 
@@ -96,3 +102,10 @@ num_runs=100                    (number of runs with different seeds)
 gamma = 0.9                     (discout factor for Q-Learning)
 mixed+beta=0.5                  (for Virtue-mixed agent) 
 ```
+
+## Plotting 
+
+We recommend running specific sections from plotting.py in an IPython environment. Plots will be saved within the specific game's directory, e.g. 'IPD/results/QLS_QLS/plots'.
+
+
+
