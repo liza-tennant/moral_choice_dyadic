@@ -14,9 +14,9 @@ If you use this code, please cite the following paper:
     booktitle={The 32nd International Joint Conference on Artificial Intelligence (IJCAI'23)}, 
     title={Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning}, 
     year={2023},
-    pages={x-x},
-    venue={Maca, S.A.R.},
-    doi={x}
+    pages={...-...},
+    venue={Macao, S.A.R.},
+    doi={...}
 }
 ```
 
