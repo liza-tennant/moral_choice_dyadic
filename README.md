@@ -89,10 +89,14 @@ python3 main.py --title1 QLVM --title2 QLVE_k --eps0 1.0 --epsdecay True &
 python3 main.py --title1 QLVM --title2 QLVM --eps0 1.0 --epsdecay True
 ```
 
-4. to run experiments for a different dilemma game - e.g. IVD:
+4. to run experiments for a different dilemma game:
 ```
 cd ../IVD
-#run main.py with each pair of agents as above 
+#run main_volunteer.py with each pair of agents as above 
+```
+```
+cd ../ISH
+#run main_staghunt.py with each pair of agents as above 
 ```
 
 ## Parameters
