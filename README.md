@@ -17,7 +17,7 @@ If you use this code, please cite the following paper:
     year={2023},
     pages={...-...},
     venue={Macao, S.A.R.},
-    doi={...}
+    doi={https://doi.org/10.48550/arXiv.2301.08491}
 }
 ```
 
