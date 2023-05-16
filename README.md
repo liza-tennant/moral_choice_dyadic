@@ -1,7 +1,8 @@
 # Modeling Moral Choice in Dyadic Social Dilemmas with Multi-Agent Reinforcement Learning
 
 This repository contains implementation and analysis code for the following paper: 
-Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning, IJCAI'23. 
+Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning, IJCAI'23. [arXiv link](https://arxiv.org/abs/2301.08491)
+
 
 ## Cite us
 ***
