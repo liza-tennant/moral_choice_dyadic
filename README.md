@@ -29,5 +29,5 @@ This code can be used to run a simulation of social dilemma games between two ag
 ![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram_V2.png "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
 In particular, we use three social dilemma games (Iterated Prisoner's Dilemma - IPD, Iterated Volunteer's dilemma - IVD, Iterated Stag Hunt - ISH), with the following payoffs: 
-![Payoffs](pics/payoffs.pdf "Payoffs")
+![Payoffs](pics/payoffs.png "Payoffs")
 
