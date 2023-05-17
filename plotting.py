@@ -797,6 +797,65 @@ def plot_action_pairs(destination_folder, player1_title, player2_title, n_runs, 
     
     plt.savefig(f'results/outcome_plots/actions/pairs_{pair}.pdf', bbox_inches='tight')
 
+	
+	
+def plot_action_pairs_20K(destination_folder, player1_title, player2_title, n_runs, option=None):
+    '''visualise action types that each individual player takes against their opponent's last move 
+    --> what strategies are being learnt at all steps of the run? 
+    - consider the whole run'''
+    #NOTE this will only work for 10000 iterations right now, not fewer!!!
+    #NOTE we plot after iteration 0 as then the agent is reacting to a default initial state, not a move from the opponent
+
+    if os.path.exists(str(destination_folder+'/action_pairs.csv')):
+        results = pd.read_csv(str(destination_folder+'/action_pairs.csv'), index_col=0)
+
+    else: #if action_pairs.csv does not yet exist 
+        actions_player1 = pd.read_csv(f'{destination_folder}/player1/action.csv', index_col=0)
+        actions_player2 = pd.read_csv(f'{destination_folder}/player2/action.csv', index_col=0)
+
+        #rename columns 
+        colnames = ['run'+str(i) for i in range(n_runs)]
+        actions_player1.columns = colnames
+        actions_player2.columns = colnames
+
+        results = pd.DataFrame(columns=colnames)
+
+        for colname in colnames: #loop over every run
+            str_value = actions_player1[colname].astype(str) + ', ' + actions_player2[colname].astype(str)
+            str_value = str_value.str.replace('1', 'D')
+            str_value = str_value.str.replace('0', 'C')
+            results[colname] = str_value
+
+        results.to_csv(str(destination_folder+'/action_pairs.csv'))
+
+    results_counts = results.transpose().apply(pd.value_counts).transpose()[1:] 
+    #plot after first episode, as in the first apisode they are reacting to default state=0
+    results_counts.dropna(axis=1, how='all', inplace=True)
+
+    #plt.figure(figsize=(20, 15), dpi=100)
+    plt.figure(dpi=80, figsize=(10, 4))
+    plt.rcParams.update({'font.size':20})
+    results_counts.plot.area(stacked=True, ylabel = '# action pairs observed', #rot=45,
+        xlabel='Iteration', #colormap='PiYG_r',
+        color={'C, C':'#28641E', 'C, D':'#B0DC82', 'D, C':'#EEAED4', 'D, D':'#8E0B52'}, linewidth=0.05, alpha=0.9,
+        #color={'C, C':'royalblue', 'C, D':'lightblue', 'D, C':'yellow', 'D, D':'orange'},
+        title=str(player1_title.replace('Ethics','').replace('_','-') +' vs '+player2_title.replace('Ethics','').replace('_','-') + f'\n (longer training)')) #Pairs of simultaneous actions over time: \n '+
+
+    #plt.savefig(f'{destination_folder}/plots/action_pairs.png', bbox_inches='tight')
+    if not os.path.isdir('results/outcome_plots/actions'):
+            os.makedirs('results/outcome_plots/actions')
+
+    if not option: #if plotting main results
+        pair = destination_folder.split('/')[1]
+
+    else: #if plotting extra parameter search for beta in QLVM 
+        pair = destination_folder
+        #pair += str(option)
+    
+    #save in the parent directory for simplicity 
+    plt.savefig(f'{pair}.pdf', bbox_inches='tight')
+
+
 
 
 ########################
@@ -3910,6 +3969,31 @@ for destination_folder in folders:
 
     plot_action_pairs(destination_folder=destination_folder, player1_title=long_titles[0], player2_title=long_titles[1], n_runs=n_runs, option='eps0.05')
 
+
+
+
+
+
+########################################################################################
+#### extra - analysis of the effect of longer training on Virtue-equality's learning ####
+########################################################################################
+
+
+n_runs = 100
+
+destination_folder = 'results/QLVE_e_QLUT_iter20000_eps01.0_epsdecay'
+destination_folder = 'results/QLVE_e_QLDE_iter20000_eps01.0_epsdecay'
+destination_folder = 'results/QLVE_e_QLVE_e_iter20000_eps01.0_epsdecay'
+destination_folder = 'results/QLVE_e_QLVE_k_iter20000_eps01.0_epsdecay'
+destination_folder = 'results/QLVE_e_QLVE_m_iter20000_eps01.0_epsdecay'
+
+#manually split the 'QLVE_' types
+short_titles = destination_folder.split('/')[1][0:6], destination_folder.split('/')[1][7:11]
+long_titles = [title_mapping[title] for title in short_titles]
+print('plotting results for: ', long_titles)
+
+plot_action_pairs_20K(destination_folder=destination_folder, player1_title=long_titles[0], player2_title=long_titles[1], n_runs=n_runs, option='eps0.05')
+#save plot manually in this case 
 
 
 
