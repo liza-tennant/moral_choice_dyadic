@@ -178,6 +178,10 @@ python3 main.py --title1 QLVE_k --title2 QLVE_k --eps0 0.05
 
 python3 main.py --title1 QLVE_e --title2 QLUT --eps0 0.5 --epsdecay True
 python3 main.py --title1 QLVE_e --title2 QLUT --eps0 1.0 --epsdecay True --num_iterations 20000
+python3 main.py --title1 QLVE_e --title2 QLDE --eps0 1.0 --epsdecay True --num_iterations 20000
+python3 main.py --title1 QLVE_e --title2 QLVE_e --eps0 1.0 --epsdecay True --num_iterations 20000
+python3 main.py --title1 QLVE_e --title2 QLVE_k --eps0 1.0 --epsdecay True --num_iterations 20000
+python3 main.py --title1 QLVE_e --title2 QLVE_m --eps0 1.0 --epsdecay True --num_iterations 20000
 
 
 #!/bin/bash
