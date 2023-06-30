@@ -109,12 +109,12 @@ manually specified:
 
 set by default within main.py:
 ```
-master_seed=1                   (initial seed for SeedSequence in random number generator) 
-alpha0=0.0.1 & decay=0.0005     (learning rate for Q-Learning)
-num_iterations=10000            (number of iterations within a single runs)
-num_runs=100                    (number of runs with different seeds) 
-gamma = 0.9                     (discout factor for Q-Learning)
-mixed+beta=0.5                  (for Virtue-mixed agent) 
+master_seed = 1                   (initial seed for SeedSequence in random number generator) 
+alpha0 = 0.01 & decay = 0.0005    (learning rate for Q-Learning)
+num_iterations = 10000            (number of iterations within a single runs)
+num_runs = 100                    (number of runs with different seeds) 
+gamma = 0.9                       (discout factor for Q-Learning)
+mixed_beta = 0.5                  (for Virtue-mixed agent) 
 ```
 
 ## Plotting 
