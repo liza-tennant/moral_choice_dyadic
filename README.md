@@ -12,15 +12,21 @@ Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learnin
 If you use this code, please cite the following paper:
 
 ```bibtex
-@INPROCEEDINGS{TennantMoralRL2023,
-    author={Tennant, Elizaveta and Hailes, Stephen and Musolesi, Mirco},
-    booktitle={The 32nd International Joint Conference on Artificial Intelligence (IJCAI'23)}, 
-    title={Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning}, 
-    year={2023},
-    pages={...-...},
-    venue={Macao, S.A.R.},
-    doi={https://doi.org/10.48550/arXiv.2301.08491}
+@INPROCEEDINGS{Tennant-ijcai2023p36,
+  title     = {Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning},
+  author    = {Tennant, Elizaveta and Hailes, Stephen and Musolesi, Mirco},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Edith Elkind},
+  pages     = {317--325},
+  year      = {2023},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2023/36},
+  url       = {https://doi.org/10.24963/ijcai.2023/36},
 }
+
 ```
 
 You can contact the authors at: `l.karmannaya.16@ucl.ac.uk`
