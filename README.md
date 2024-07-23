@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## The environment 
 
-This code can be used to run a simulation of social dilemma games between two agents - a learning moral agent M and a learning opponent O. We use a. Reinforcement Learning paradigm where each agent learns accoridng to a rewards signal.
+This code can be used to run a simulation of social dilemma games between two agents - a learning moral agent M and a learning opponent O. We use a Reinforcement Learning paradigm where each agent learns accoridng to a rewards signal.
 
 ![Reinformcenet Learning by a Moral learning agent M and a learning opponent O](pics/diagram_V2.png "Reinformcenet Learning by a Moral learning agent M and a learning opponent O")
 
