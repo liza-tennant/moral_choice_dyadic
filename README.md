@@ -24,7 +24,7 @@ If you use this code, please cite the following paper:
   month     = {8},
   note      = {Main Track},
   doi       = {10.24963/ijcai.2023/36},
-  url       = {https://doi.org/10.24963/ijcai.2023/36},
+  url       = {[https://doi.org/10.24963/ijcai.2023/36](https://doi.org/10.24963/ijcai.2023/36)},
 }
 
 ```
